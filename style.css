@@ -1,0 +1,272 @@
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .container h1 {
+    text-decoration: uppercase;
+    font-size: 3.2vw;
+    margin: 0px;
+    letter-spacing: 10px;
+    padding-left: 12px;
+  }
+
+  .container h2 {
+    margin: 0;
+    font-size: 2.4vw;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 4px;
+  }
+
+  .lato {
+    font-size: 60px;
+    padding-bottom: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f5f5f5;
+  }
+  .pv {
+    padding-bottom: 20px;
+    font-size: 80px;
+    margin: 0px;
+    letter-spacing: 10px;
+    padding-left: 12px;
+    color: yellow;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .container h1 {
+    text-decoration: uppercase;
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 10px;
+    padding-left: 12px;
+  }
+
+  .container h2 {
+    padding-top: 10px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 4px;
+  }
+  .lato {
+    font-size: 60px;
+    padding-bottom: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f5f5f5;
+  }
+  .pv {
+    padding-bottom: 20px;
+    font-size: 70px;
+    margin: 0px;
+    letter-spacing: 10px;
+    padding-left: 12px;
+    color: pink;
+  }
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: url(img.jpg) center;
+  /* background-size: cover; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.count {
+  margin: 40px 0;
+}
+
+.count-item {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 2px solid;
+  margin: 0 60px;
+  font-size: 14px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.count-item span {
+  display: block;
+  font-size: 18px;
+  margin-top: 26px;
+  color: yellow;
+}
+
+/* animation */
+.flex-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.unit {
+  text-align: center;
+}
+
+.gift {
+  position: absolute;
+  cursor: pointer;
+  top: 280px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 2px 2px 4px 4px / 2px 2px 16px 16px;
+  background: linear-gradient(to top, transparent 0px, rgba(255, 255, 255, 0.3)),
+    linear-gradient(to top, transparent 0px, rgba(255, 255, 255, 0.3)),
+    linear-gradient(to top, transparent 0px, rgba(255, 255, 255, 0.35)),
+    linear-gradient(to top, rgba(0, 0, 0, 0.4) 0px, rgba(0, 0, 0, 0.1)),
+    linear-gradient(to top, transparent 70px, rgba(0, 0, 0, 0.6) 80px),
+    linear-gradient(to top, transparent 70px, rgba(0, 0, 0, 0.6) 80px),
+    linear-gradient(
+      to right,
+      #338833 0px,
+      #33bb33 34px,
+      #ff0000 34px,
+      #ff0000 36px,
+      #ffff00 36px,
+      #ffff00 38px,
+      #ff0000 38px,
+      #ff0000 62px,
+      #ffff00 62px,
+      #ffff00 64px,
+      #ff0000 64px,
+      #ff0000 66px,
+      #33bb33 66px,
+      #338833 100px
+    ),
+    linear-gradient(
+      to right,
+      #338833 0px,
+      #33bb33 32px,
+      #ff0000 32px,
+      #ff0000 34px,
+      #ffff00 34px,
+      #ffff00 36px,
+      #ff0000 36px,
+      #ff0000 60px,
+      #ffff00 60px,
+      #ffff00 62px,
+      #ff0000 62px,
+      #ff0000 64px,
+      #33bb33 64px,
+      #338833 100px
+    );
+  background-size: 34px 5px, 36px 5px, 32px 20px, 96px 80px, 32px 80px,
+    32px 80px, 100px 20px, 96px 80px;
+  background-position: 0px 0px, 66px 0px, 34px 0px, 2px 20px, 2px 20px,
+    66px 20px, 0px 0px, 2px 20px;
+  background-repeat: no-repeat;
+  box-shadow: 0px 20px 40px -18px rgba(0, 0, 0, 0.25),
+    0px -20px 15px -10px rgba(0, 0, 0, 0.2);
+}
+.gift:before {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: '';
+  top: -105px;
+  left: -20px;
+  z-index: -1;
+  width: 32px;
+  height: 40px;
+  border-radius: 10px 5px 0px 0px;
+  box-shadow: inset -4px 5px 10px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(
+    to right,
+    transparent 0px,
+    #ff0000 0px,
+    #ff0000 2px,
+    #ffff00 2px,
+    #ffff00 4px,
+    #ff0000 4px,
+    #ff0000 28px,
+    #ffff00 28px,
+    #ffff00 30px,
+    #ff0000 30px,
+    #ff0000 32px,
+    transparent 32px
+  );
+  background-size: 32px 40px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  transform: rotateZ(-30deg) scale(0.8, 1);
+}
+.gift:after {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: '';
+  top: -90px;
+  right: -20px;
+  z-index: -1;
+  width: 32px;
+  height: 40px;
+  border-radius: 5px 10px 0px 0px;
+  box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    to right,
+    transparent 0px,
+    #ff0000 0px,
+    #ff0000 2px,
+    #ffff00 2px,
+    #ffff00 4px,
+    #ff0000 4px,
+    #ff0000 28px,
+    #ffff00 28px,
+    #ffff00 30px,
+    #ff0000 30px,
+    #ff0000 32px,
+    transparent 32px
+  );
+  background-size: 32px 40px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  transform: rotateZ(25deg) scale(0.75, 1);
+}
+
+.gift:hover {
+  transform: scale(1.5);
+  transition: all ease-in-out 0.5s;
+}
